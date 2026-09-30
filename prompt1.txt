@@ -1,0 +1,8 @@
+Actúa como un diseñador web y tutor de CSS. Necesito que me ayudes a crear exclusivamente el archivo de estilos `stylee.css` para una página que ya tengo estructurada en HTML. Quiero que la página tenga un diseño moderno, estilo oscuro/gamer con animaciones y efectos visuales atractivos, usando las clases que ya existen en mi código sin modificar nada del HTML.
+
+Aplica los siguientes estilos en el CSS:
+1. Fondo y cuerpo: Un fondo oscuro con un degradado en tonos azules que se mueva suavemente de fondo mediante animaciones, con la tipografía centrada y ocupando toda la pantalla.
+2. Avatar (.avatar): Estilos para la imagen "paw.png" para que sea un círculo perfecto de 110px por 110px, con object-fit: cover para evitar que se deforme, un borde azul brillante con sombra y una animación de flotación suave arriba y abajo.
+3. Encabezado (.encabezado): Título principal destacado para mi nombre (Liam Morales Mantilla) y el texto de la clase .curso (KrakeDev) en un color azul neón brillante.
+4. Tarjetas (.tarjeta): Ubicadas en un contenedor centrado de máximo 650px. Deben tener un estilo tipo cristal transparente (glassmorphism), bordes redondeados (15px) y un borde fino brillante, además de un efecto hover para que al pasar el cursor la tarjeta se eleve suavemente y brille más.
+5. Botones (.boton): Estilos para los enlaces para que parezcan botones redondeados tipo píldora, con fondo degradado azul neón, texto en mayúsculas y un efecto al pasar el ratón para que se agranden ligeramente.

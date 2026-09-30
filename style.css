@@ -1,0 +1,120 @@
+/* Importar una fuente moderna (opcional, pero se ve muy bien) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Estilos generales y fondo dinámico */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-size: 200% 200%;
+    animation: moverFondo 10s ease infinite;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Animación para el fondo */
+@keyframes moverFondo {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Estilos del encabezado */
+.encabezado {
+    margin-bottom: 50px;
+    padding-top: 30px;
+}
+
+/* Avatar con animación de flotación */
+.avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px auto;
+    border: 3px solid #00f2fe;
+    box-shadow: 0 0 20px rgba(79, 172, 254, 0.5);
+    animation: flotar 3s ease-in-out infinite;
+}
+
+/* Animación de flotar */
+@keyframes flotar {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.encabezado h1 {
+    margin: 10px 0;
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.curso {
+    color: #4facfe;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* Contenedor principal de las tarjetas */
+.contenedor-proyectos {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* Estilos de las tarjetas (Efecto Glassmorphism) */
+.tarjeta {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+/* Efecto al pasar el ratón sobre la tarjeta */
+.tarjeta:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 242, 254, 0.2);
+    border: 1px solid rgba(79, 172, 254, 0.4);
+}
+
+.tarjeta h2 {
+    color: #00f2fe;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.tarjeta p {
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+}
+
+/* Botones con efectos dinámicos */
+.boton {
+    display: inline-block;
+    background: linear-gradient(45deg, #00f2fe, #4facfe);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+.boton:hover {
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(79, 172, 254, 0.6);
+}
